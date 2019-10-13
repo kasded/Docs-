@@ -1,4 +1,4 @@
-package lv.javaguru;
+package lv.javaguru.HomeWork1;
 
 import java.util.Random;
 

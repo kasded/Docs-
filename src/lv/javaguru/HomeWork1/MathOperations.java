@@ -1,4 +1,4 @@
-package lv.javaguru;
+package lv.javaguru.HomeWork1;
 
 public class MathOperations {
     public static void main(String[] args) {
