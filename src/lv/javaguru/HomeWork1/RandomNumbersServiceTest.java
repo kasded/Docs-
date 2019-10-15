@@ -6,6 +6,7 @@ public class RandomNumbersServiceTest {
     public static void main(String[] args) {
 
         Random random = new Random();
+        //mainīgo nosaukumiem ir jābut angliski
         int pirmaIzlase = random.nextInt(101);
         int otraIzlase = random.nextInt(101);
         int treshaIzlase = random.nextInt(101);

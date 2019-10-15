@@ -1,5 +1,6 @@
 package lv.javaguru.HomeWork2;
 
+//Ok
 public class CircleTest {
     public static void main(String[] args) {
 

@@ -1,5 +1,6 @@
 package lv.javaguru.HomeWork2;
 
+//Ok
 public class Car {
 
     private String colour;

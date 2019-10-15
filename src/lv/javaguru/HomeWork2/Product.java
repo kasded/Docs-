@@ -1,11 +1,12 @@
 package lv.javaguru.HomeWork2;
 
+//Ok
 public class Product {
 
     private String name;
     private double regularPrice;
     private double discount;
-    private double actualPrice;
+    private double actualPrice;  //lieks mainīgais - nav izmatots. Tātad dzēšam
 
     public Product(String name, double regularPrice, double discount) {
         this.name = name;
@@ -15,6 +16,7 @@ public class Product {
 
     }
 
+    //Tāpat arī visas šīs metodes "setName", "setRegularPrice", "setDiscount", "setActualPrice" dzēšam, jo tās netiek izmantotas
     public void setName(String name) {
         this.name = name;
     }
