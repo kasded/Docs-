@@ -5,11 +5,15 @@ package lv.javaguru.HomeWork2;
 public class ProductTest {
     public static void main(String[] args) {
 
-//        Product product = new Product("Samsung phone", 500, 0.20);
-        Product product = new Product("milk", 0.8, 20);
+//       Manejais nesaprot bet centos kautka :(
+         product printInformation = new product("Milk", 0.8, 0.20);
+         product calculateActualPrice = new product("Milk", 0.8, 0.20);
 
-        System.out.println("Product name: " + product.getName() + ", Regular Price: " + product.getRegularPrice()
-        + ", Discount " + product.getDiscount() + ", Actual Price " + (( product.getRegularPrice() - product.getRegularPrice() * product.getDiscount()) ));
+        System.out.println("Product name: " + printInformation.getName() + ", Regular Price: " + printInformation.getRegularPrice()
+        + ", Discount " + printInformation.getDiscount() );
+
+        System.out.println("Actual price " + (calculateActualPrice.getRegularPrice() - (calculateActualPrice.getRegularPrice() * calculateActualPrice.getDiscount())));
+
 
     }
 

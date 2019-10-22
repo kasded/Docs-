@@ -7,9 +7,14 @@ public class MathOperations {
         int firstNumber = 10;
         int secondNumber = 5;
 
-        //labāk izmantot lokālo mainīgo vai atsevišķu metodi matemātisko operaciju rezukltāta glabāšanai/iegūšanai padarīs kodu vieglāk lasāmu
-        System.out.println("Sum result = " + (firstNumber + secondNumber) + " Substract result = " + (firstNumber - secondNumber) +
-                " Multiply result = " + (firstNumber * secondNumber) + " Divide result = " + (double)(firstNumber / secondNumber));
+        int  sum = firstNumber + secondNumber;
+        int substract = firstNumber - secondNumber;
+        int multiply = firstNumber * secondNumber;
+        int divide = firstNumber / secondNumber;
+
+
+        System.out.println("Sum result = " + sum + " Substract result = " + substract +
+                " Multiply result = " + multiply + " Divide result = " + divide);
 
 
     }

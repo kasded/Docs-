@@ -2,7 +2,7 @@ package lv.javaguru.HomeWork2;
 
 //OK
 public class Circle {
-    double radius; //šim ir jābūt "private", jo objekta stāvokli drīkst mainīt tikai izmantojot metodes
+    private double radius;
 
     public double getRadius() {
         return radius;
