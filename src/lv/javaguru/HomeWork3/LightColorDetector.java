@@ -1,5 +1,6 @@
 package lv.javaguru.HomeWork3;
 
+//Izlasi uzmanīgi uzdevumu
 public class LightColorDetector {
 
     public boolean isNumber(int lengthOfWave) {

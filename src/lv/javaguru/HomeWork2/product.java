@@ -1,6 +1,7 @@
 package lv.javaguru.HomeWork2;
 
 //Ok
+//klases nosaukums jaraksta ar lielo burtu
 public class product {
 
     private String name;
