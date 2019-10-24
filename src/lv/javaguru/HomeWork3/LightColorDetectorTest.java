@@ -1,24 +1,54 @@
 package lv.javaguru.HomeWork3;
 
 public class LightColorDetectorTest {
-
-    static void check(boolean expectedResult,
-                      boolean actualResult,
-                      String testName) {
-        if (actualResult == expectedResult) {
-            System.out.println(testName + " has PASSED");
-        } else {
-            System.out.println(testName + " has FAILED");
-            System.out.println("Actual: " + actualResult + ", Expected: "+ expectedResult);
-        }
-    }
-
     public static void main(String[] args) {
-        LightColorDetector lightColorDetector = new LightColorDetector();
-        boolean expectedResult = true;
-        boolean actualResult = lightColorDetector.isNumber(450);
-        check(expectedResult, actualResult, "shouldBeViolet_380_449");
+        testDetectViolet();
+
+        testDetectBlue();
+
+        testDetectGreen();
+
+        testDetectYellow();
+
+        testDetectOrange();
+
+        testDetectRed();
 
     }
 
+    private static void testDetectRed() {
+        LightColorDetector lightColorDetector = new LightColorDetector();
+        String result = lightColorDetector.detect(750);
+        System.out.println("Result: " + result);
+    }
+
+    private static void testDetectOrange() {
+        LightColorDetector lightColorDetector = new LightColorDetector();
+        String result = lightColorDetector.detect(590);
+        System.out.println("Result: " + result);
+    }
+
+    private static void testDetectYellow() {
+        LightColorDetector lightColorDetector = new LightColorDetector();
+        String result = lightColorDetector.detect(580);
+        System.out.println("Result: " + result);
+    }
+
+    private static void testDetectGreen() {
+        LightColorDetector lightColorDetector = new LightColorDetector();
+        String result = lightColorDetector.detect(500);
+        System.out.println("Result: " + result);
+    }
+
+    private static void testDetectBlue() {
+        LightColorDetector lightColorDetector = new LightColorDetector();
+        String result = lightColorDetector.detect(470);
+        System.out.println("Result: " + result);
+    }
+
+    private static void testDetectViolet() {
+        LightColorDetector lightColorDetector = new LightColorDetector();
+        String result = lightColorDetector.detect(449);
+        System.out.println("Result: " + result);
+    }
 }

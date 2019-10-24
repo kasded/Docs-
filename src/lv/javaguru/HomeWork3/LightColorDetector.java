@@ -1,16 +1,26 @@
 package lv.javaguru.HomeWork3;
 
-//Izlasi uzmanīgi uzdevumu
+
 public class LightColorDetector {
-
-    public boolean isNumber(int lengthOfWave) {
-        if (lengthOfWave >= 380 || lengthOfWave <= 449 || lengthOfWave >= 450
-             || lengthOfWave <= 494) {
-
-            return true;
-        } else {
-            return false;
+    public String detect(int wavelength) {
+        if ((wavelength >= 380) && (wavelength <= 449)) {
+            return "Violet";
         }
-
+        if ((wavelength >= 450) && (wavelength <= 494)) {
+            return "Blue";
+        }
+        if ((wavelength >= 495) && (wavelength <= 569)) {
+            return "Green";
+        }
+        if ((wavelength >= 570) && (wavelength <= 589)) {
+            return "Yellow";
+        }
+        if ((wavelength >= 590) && (wavelength <= 619)) {
+            return "Orange";
+        }
+        if ((wavelength >= 620) && (wavelength <= 750)) {
+            return "Red";
+        }
+    return "No valid number";
     }
 }

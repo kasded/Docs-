@@ -1,22 +1,24 @@
 package lv.javaguru.HomeWork2;
 
-//Ok
-//klases nosaukums jaraksta ar lielo burtu
-public class product {
-
+public class Product {
     private String name;
     private double regularPrice;
     private double discount;
 
-    public product(String name, double regularPrice, double discount) {
+    public void setName(String name) {
         this.name = name;
-        this.regularPrice = regularPrice;
-        this.discount = discount;
+    }
 
+    public void setRegularPrice(double regularPrice) {
+        this.regularPrice = regularPrice;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public double getRegularPrice() {
@@ -26,8 +28,4 @@ public class product {
     public double getDiscount() {
         return discount;
     }
-
-
-    }
-
-
+}
