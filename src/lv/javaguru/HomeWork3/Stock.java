@@ -1,5 +1,7 @@
 package lv.javaguru.HomeWork3;
 
+
+// nav gatavs
 public class Stock {
     private String company;
     private double currentValue;
