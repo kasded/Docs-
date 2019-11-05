@@ -1,8 +1,12 @@
 package lv.javaguru.HomeWork3;
 
-
+//lietojam ctrl = alt + l
 public class LightColorDetector {
     public String detect(int wavelength) {
+
+        //šeit labak izmantot if -> else if -> else konstrukciju
+        //jo intervāli nepārklājas
+        //šāds pieraksts maldina ar to ka teorētiski sie intervali var pārklāties
         if ((wavelength >= 380) && (wavelength <= 449)) {
             return "Violet";
         }

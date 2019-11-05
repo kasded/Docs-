@@ -1,5 +1,6 @@
 package lv.javaguru.HomeWork3;
 
+//Ok
 public class LightColorDetectorTest {
     public static void main(String[] args) {
         testDetectViolet();
