@@ -25,12 +25,14 @@ public class NumberService {
             }
         }
         System.out.println("sum " + sum);
-    } public static void sumInRange(int firstNumber, int secondNumber) {
+    }
+
+    public static void sumInRange(int firstNumber, int secondNumber) {
         int sum = 0;
         for (int i = firstNumber; i <= secondNumber; i++) {
 
-                System.out.println("i " + i);
-                sum = sum + i;
+            System.out.println("i " + i);
+            sum = sum + i;
 
         }
 
@@ -38,14 +40,12 @@ public class NumberService {
             for (int j = secondNumber; j <= firstNumber; j++) {
                 if (j % 2 == 0)
                     sum = sum + j;
-                    System.out.println("J " + j);
+                System.out.println("J " + j);
 
             }
         }
         System.out.println("sum " + sum);
     }
-
-
 
 
 }

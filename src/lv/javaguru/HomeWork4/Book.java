@@ -19,20 +19,21 @@ public class Book {
         if (object == null || this.getClass() != object.getClass()) return false;
         Book book = (Book) object;
         return this.author.equals(book.author)
-            && this.title.equals(book.title)
-            && this.pageCount == book.pageCount;
+                && this.title.equals(book.title)
+                && this.pageCount == book.pageCount;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Book: { "
                 + " author: " + author
                 + ", title: " + title
                 + ", page count: " + pageCount
                 + " } ";
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(author, title, pageCount);
     }
 }

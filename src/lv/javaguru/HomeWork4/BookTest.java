@@ -12,14 +12,14 @@ public class BookTest {
 //        Book: {  author: J. R. R. Tolkien, title: The Hobbit, page count: 304 }
 
         // trūkst gadījuma testa    , kad objekti ir vienādi
-        Book warAndPeace = new Book("Leo Tolstoy", "War and Peace", 1225 );
-        Book theHobbit = new Book("J. R. R. Tolkien", "The Hobbit", 304 );
+        Book warAndPeace = new Book("Leo Tolstoy", "War and Peace", 1225);
+        Book theHobbit = new Book("J. R. R. Tolkien", "The Hobbit", 304);
         boolean expectedResult = false;
 
         System.out.println("If both objects are equal");
         boolean actualResult = theHobbit.equals(warAndPeace);
 
-        if(actualResult) {
+        if (actualResult) {
             System.out.println("Equal");
         } else {
             System.out.println("Not equal");
