@@ -25,6 +25,6 @@ public class LightColorDetector {
         if ((wavelength >= 620) && (wavelength <= 750)) {
             return "Red";
         }
-    return "No valid number";
+        return "No valid number";
     }
 }

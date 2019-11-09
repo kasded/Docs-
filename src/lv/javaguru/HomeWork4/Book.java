@@ -1,5 +1,7 @@
 package lv.javaguru.HomeWork4;
 
+import java.util.Objects;
+
 public class Book {
     private String author;
     private String title;
@@ -28,5 +30,9 @@ public class Book {
                 + ", title: " + title
                 + ", page count: " + pageCount
                 + " } ";
+    }
+    @Override
+    public int hashCode(){
+        return Objects.hash(author, title, pageCount);
     }
 }

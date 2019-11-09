@@ -14,15 +14,15 @@ public class BookTest {
         // trūkst gadījuma testa    , kad objekti ir vienādi
         Book warAndPeace = new Book("Leo Tolstoy", "War and Peace", 1225 );
         Book theHobbit = new Book("J. R. R. Tolkien", "The Hobbit", 304 );
-        boolean expectedResult = true;
+        boolean expectedResult = false;
 
-        System.out.println("Book equals true Test");
-        boolean actualResult = warAndPeace.equals(theHobbit);
+        System.out.println("If both objects are equal");
+        boolean actualResult = theHobbit.equals(warAndPeace);
 
         if(actualResult) {
-            System.out.println("PASSED");
+            System.out.println("Equal");
         } else {
-            System.out.println("FAILED");
+            System.out.println("Not equal");
             System.out.println("Expected: " + expectedResult);
             System.out.println("Actual: " + actualResult);
 
@@ -30,6 +30,7 @@ public class BookTest {
 
         System.out.println(warAndPeace);
         System.out.println(theHobbit);
+
 
     }
 }
