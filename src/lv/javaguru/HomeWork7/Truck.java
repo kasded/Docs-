@@ -1,5 +1,5 @@
 package lv.javaguru.HomeWork7;
-
+//Ok
 public class Truck implements Car {
 
     public void cargo() {

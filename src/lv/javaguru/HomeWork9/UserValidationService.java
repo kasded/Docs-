@@ -3,12 +3,14 @@ package lv.javaguru.HomeWork9;
 
 public class UserValidationService {
 
-
+    //šiem atribūtirm būtu jābūt atsevišķā klasē - User
     public String name;
     public String lastName;
     public int age;
 
+    //šeit nepieciešams padot objektu User
     public UserValidationService(String name, String lastName, int age) {
+        //Uzdevumā tika teikts, ka ir jaizveido ari savs exception
         if (isValidName(name)) {
             throw new IllegalArgumentException("To many symbols or to less in name");
         } else if (isValidLastName(lastName)) {

@@ -1,6 +1,6 @@
 package lv.javaguru.HomeWork7;
 
-
+//Ok
 public class CarTest {
     public static void main(String[] args) {
 

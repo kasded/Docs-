@@ -1,5 +1,5 @@
 package lv.javaguru.HomeWork7;
-
+//Ok
 public class Bus implements Car {
 
     public void busPassengers() {
